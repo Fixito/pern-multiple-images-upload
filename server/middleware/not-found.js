@@ -1,3 +1,3 @@
-const notFound = (req, res) => res.status(404).send('Route does not exist')
+const notFound = (_req, res) => res.status(404).send("La route n'existe pas");
 
-module.exports = notFound
+module.exports = notFound;

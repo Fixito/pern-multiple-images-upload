@@ -1,8 +1,10 @@
 require('dotenv').config();
 require('express-async-errors');
-const cors = require('cors');
+
 const express = require('express');
 const app = express();
+
+const cors = require('cors');
 
 const fileUpload = require('express-fileupload');
 const cloudinary = require('cloudinary').v2;
@@ -31,4 +33,4 @@ app.use(errorHandlerMiddleware);
 
 const port = process.env.PORT || 5000;
 
-app.listen(port, () => console.log(`Server is listening on port ${port}...`));
+app.listen(port, () => console.log(`Le serveur écoute sur le port ${port}...`));
